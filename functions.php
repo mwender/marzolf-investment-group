@@ -37,6 +37,9 @@ include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-output.
 // Include notice to install Genesis Connect for WooCommerce.
 include_once( get_stylesheet_directory() . '/lib/woocommerce/woocommerce-notice.php' );
 
+// Marzolf Investment Group Theme - Required Files
+require_once( get_stylesheet_directory() . '/lib/fns/team.php' );
+
 // Set Localization (do not remove).
 add_action( 'after_setup_theme', 'infinity_localization_setup' );
 function infinity_localization_setup(){

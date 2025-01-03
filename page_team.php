@@ -24,20 +24,18 @@ function infinity_add_body_class( $classes ) {
 }
 
 // Conditionally remove loop.
-add_action( 'genesis_before', 'infinity_conditionally_remove_loop' );
 function infinity_conditionally_remove_loop () {
-
 	if ( get_query_var( 'paged' ) >= 2 ) {
 		remove_action('genesis_loop', 'genesis_do_loop');
 	}
 
 }
+add_action( 'genesis_before', 'infinity_conditionally_remove_loop' );
 
 // Force full width content layout.
 add_filter( 'genesis_site_layout', '__genesis_return_full_width_content' );
 
 // Add our custom loop.
-add_action( 'genesis_loop', 'infinity_team_loop' );
 function infinity_team_loop() {
 
 	global $post;
@@ -85,8 +83,8 @@ function infinity_team_loop() {
 	genesis_custom_loop( wp_parse_args( $query_args, $args ) );
 
 	remove_filter( 'post_class' , 'infinity_team_class' );
-
 }
+add_action( 'genesis_loop', 'infinity_team_loop' );
 
 // Add team member featured image.
 function infinity_page_team_image() {
