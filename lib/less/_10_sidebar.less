@@ -1,0 +1,96 @@
+/* Sidebar
+---------------------------------------------------------------------------------------------------- */
+
+.sidebar {
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+.sidebar .widget {
+  border-bottom: 1px solid #eee;
+  padding: 50px 60px 60px;
+}
+
+
+/* Offscreen Content
+---------------------------------------------------------------------------------------------------- */
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.offscreen-content {
+  background-color: rgba( 255, 255, 255, 1.0);
+  display: none;
+  height: 100%;
+  left: 0;
+  overflow-y: scroll;
+  padding: 20px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 9998;
+}
+
+.offscreen-content .wrap {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+
+.offscreen-container {
+  display: table;
+  height: 100vh;
+  overflow: hidden;
+  table-layout: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.offscreen-container .widget-area {
+  display: table-cell;
+  padding-bottom: 20px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Offscreen Content Icon
+--------------------------------------------- */
+
+.ion-ios-close-empty,
+.ion-ios-more {
+  font-size: 36px;
+  font-size: 3.6rem;
+}
+
+.ion-ios-close-empty {
+  margin-right: 10px;
+}
+
+.offscreen-content-icon,
+.offscreen-content-toggle {
+  position: fixed;
+  right: 20px;
+  top: 18px;
+  z-index: 9998;
+}
+
+.admin-bar .offscreen-content-icon,
+.admin-bar .offscreen-content-toggle {
+  top: 52px;
+}
+
+.offscreen-content button,
+.offscreen-content-icon button {
+    background-color: #fff;
+  color: #000;
+  font-size: 20px;
+  font-size: 2rem;
+    padding: 2px 10px 2px 12px;
+}
+
+.offscreen-content button:hover,
+.offscreen-content-icon button:hover {
+  color: #d43c67;
+}
