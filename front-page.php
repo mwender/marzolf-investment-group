@@ -109,7 +109,7 @@ function infinity_front_page_widgets_02(){
 
 	genesis_widget_area( 'front-page-6', array(
 		'before' => '<div id="front-page-6" class="front-page-6"><div class="solid-section flexible-widgets widget-area fadeup-effect' . infinity_widget_area_class( 'front-page-6' ) . '"><div class="wrap">',
-		'after'  => '</div></div></div>',
+		'after'  => '</div></div><img src="' . get_stylesheet_directory_uri() . '/images/marzolf-team_1602x1068.jpg' . '" style="width: 300px; height: 200px; transform: rotate(7deg); border: 7px solid #fff; box-shadow: 3px 3px 3px rgba(0,0,0,0.6);" /></div>',
 	) );
 
 	// Remove entry-title filter.
